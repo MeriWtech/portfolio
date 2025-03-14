@@ -4,10 +4,6 @@ body {
     font-size: 18px;
 }
 
-main {
-    display: flex;
-}
-
 img {
     border-radius: 20%;
     box-shadow: 12px 12px 2px 1px rgb(255, 73, 128);
@@ -19,12 +15,73 @@ main {
 }
 
 nav {
-    display: flex;
     justify-content: space-between;
+    position: relative;
+    top: 18px;
 }
 
 figcaption {
    margin-top: 15px;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+nav a {
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+h2 a {
+    color: black;
+}
+
+h2 a:hover {
+    color: pink;
+}
+
+nav a:hover {
+    color: white;
+    background-color: rgb(255, 73, 128);
+}
+
+.logo p {
+    position: relative;
+    top: 15px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.intro-div, .credentials, .project-div, .pics-a, nav {
+    display: flex;
+}
+
+.intro-div {
+    margin-top: -50px;
+}
+
+.logo {
+    position: relative;
+    left: 50px;
+}
+
+.row {
+    display: flex;
+    position: relative;
+    right: 25px;
+    bottom: 25px;
+}
+
+.pics-a {
+    gap: 50px;
+}
+
+.project-div {
+    flex-direction: column;
+    align-items: center;
 }
 
 .image {
@@ -33,18 +90,30 @@ figcaption {
 
 
 .credentials {
-    display: flex;
     width: 800px;
     justify-content: space-around;
     padding-top: 20px;
 }
 
 header {
-    padding: 10px 20px 20px;
+    padding: 0 20px 18px;
     background-color: rgb(255, 200, 200);
+}
+
+span {
+    color: rgb(255, 73, 128);
+}
+
+.intro {
+    left: 20px;
+}
+
+.image {
+    right: 20px;
 }
 
 .intro, .image {
     margin-top: 10px;
     padding: 100px;
+    position: relative;
 }
